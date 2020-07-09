@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html, body{
+                height: 100%;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+            }
+            .container{
+                display: grid;
+                grid-template-rows: 35px auto 35px;
+                height: 100%;
+                margin: 0 0 0 0;
+            }
+            #header{
+                grid-row: 1/2;
+            }
+            #body{
+                grid-row: 2/3;
+            }
+            #footer{
+                grid-row: 3/4;
+                background-color: lightgrey;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="header">
+                <p>header</p>
+            </div>
+            <div id="body">
+                
+            </div>
+            <div id="footer">
+                <p>footer</p>
+            </div>
+        </div>
+    </body>
+</html>
