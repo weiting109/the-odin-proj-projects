@@ -17,6 +17,8 @@
                 grid-row: 1/2;
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
+                padding: 10px;
             }
             #body{
                 grid-row: 2/3;
@@ -31,8 +33,19 @@
             .nav-right-col{
                 text-align: right;
             }
-            #sign-in{
-
+            .nav{
+                color: gray;
+                text-decoration: none;
+                margin: 0.75em;
+            }
+            .nav:hover{
+                text-decoration: underline;
+            }
+            #sign-in-button{
+                background-color: royalblue;
+                color: white;
+                text-decoration: bold;
+                padding: 0.4em;
             }
         </style>
     </head>
@@ -40,13 +53,13 @@
         <div class="container">
             <div id="header">
                 <div class="nav-left-col">
-                    <a href="#">About</a>
-                    <a href="#">Store</a>
+                    <a class="nav" href="#">About</a>
+                    <a class="nav" href="#">Store</a>
                 </div>
                 <div class="nav-right-col">
-                    <a href="#">Gmail</a>
-                    <a href="#">Images</a>
-                    <button id="sign-in">Sign In</button>
+                    <a class="nav" href="#">Gmail</a>
+                    <a class="nav" href="#">Images</a>
+                    <button id="sign-in-button">Sign In</button>
                 </div>
             </div>
             <div id="body">
