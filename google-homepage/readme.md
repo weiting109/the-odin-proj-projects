@@ -7,6 +7,7 @@ Deconstructing and rebuilding Google's webpage- [cached version here](https://we
 
 ### Learning objectives
 - Deconstruct a webpage
+- Use developer tools to inspect a webpage when stuck
 - Apply CSS Grid, CSS Flex, HTML to build and style a page
 
 ***
