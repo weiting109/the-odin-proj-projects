@@ -7,6 +7,34 @@
             const moves = ['Rock', 'Paper', 'Scissors'];
             return moves[Math.floor(Math.random()*3)];
         }
+        function playRound(playerSelection, computerSelection){
+            // Function that simulates a single round of Rock Paper Scissors (rps)
+            playerSelection = playerSelection.toLowerCase(); // Case in-sensitive input
+            if (playerSelection === computerSelection.toLowerCase()){
+                return 'It\'s a draw! Go again.';
+            }
+            if (playerSelection === 'rock'){
+                if (computerSelection === 'Paper'){
+                    return 'You Lose! Paper beats Rock';
+                } else if (computerSelection === 'Scissors'){
+                    return 'You Win! Rock beats Scissors';
+                }
+            }
+            if (playerSelection === 'paper'){
+                if (computerSelection === 'Scissors'){
+                    return 'You Lose! Scissors beats Paper';
+                } else if (computerSelection === 'Rock'){
+                    return 'You Win! Paper beats Rock';
+                }
+            }
+            if (playerSelection === 'scissors'){
+                if (computerSelection === 'Rock'){
+                    return 'You Lose! Rock beats Scissors';
+                } else if (computerSelection === 'Paper'){
+                    return 'You Win! Scissors beats Paper';
+                }
+            }
+        }
     </script>
 </head>
 <body>
