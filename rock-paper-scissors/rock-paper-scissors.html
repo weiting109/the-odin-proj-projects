@@ -10,7 +10,7 @@
 <body>
     <h1> Rock-Paper-Scissors</h1>
     <div> 
-        <p id = 'narration'>Pick your move! </p>
+        <p id = "narration">Pick your move! </p>
     </div>
     <div>
         <button id = "rock">Rock</button>
@@ -75,10 +75,11 @@
     }
     game();
     */ 
-    moves = document.querySelectorAll("button");
+    const moves = document.querySelectorAll('button');
+    const narrate = document.getElementById('narration');
     moves.forEach(move=>{
         move.addEventListener("click", ()=>{
-            console.log(playRound(move.id,computerPlay()));
+            narrate.textContent = playRound(move.id,computerPlay());
         });
     });
 </script>
